@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro en pagina Web</title>
+</head>
+<body>
+<h1>UTEQ</h1>
+<p>La primera universidad del Ecuador</p>
+<header>
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#carreras">Carreras</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article>
+        <h2>
+            Registro en pagina Web
+        </h2>
+        <section>
+            <h3>Introduccion</h3>
+            <p>
+                Una aplicación web es un software que se ejecuta en un navegador web y permite a los usuarios interactuar con datos,
+                realizar transacciones y acceder a funcionalidades complejas sin instalar programas locales.
+                A diferencia de los sitios web estáticos, las aplicaciones web (como redes sociales,
+                tiendas online o herramientas de gestión) son dinámicas y ofrecen una experiencia de usuario personalizada,
+                siendo fundamentales para la comunicación y el comercio moderno.
+            </p>
+        </section>
+        <section>
+            <h3>Desarrollo</h3>
+            <p>
+                El desarrollo de aplicaciones web implica un proceso estructurado que cubre la planificación, diseño y creación de soluciones funcionales.
+                Tecnologías Fundamentales: Se utilizan lenguajes como HTML, CSS y JavaScript para el frontend (interfaz), mientras que el backend utiliza lenguajes como Python, Java o PHP, apoyados en bases de datos.Estructura y Arquitectura: Las aplicaciones suelen dividirse en frontend (lo que ve el usuario) y backend (servidor/lógica), usando arquitecturas como MVC (Modelo-Vista-Controlador).Aplicaciones Web Progresivas (PWA): Representan la evolución actual, permitiendo que las aplicaciones web funcionen con alta velocidad y ofrezcan capacidades similares a las aplicaciones nativas en dispositivos móviles.
+                Desarrollo Moderno: Se enfoca en la usabilidad, seguridad y capacidad de respuesta (responsiveness) en diferentes dispositivos.
+
+            </p>
+        </section>
+        <section>
+            <h3>Conclusion</h3>
+            <p>
+                Las aplicaciones web han transformado la interacción digital al permitir acceso a herramientas complejas desde cualquier lugar,
+                evolucionando de páginas estáticas a plataformas dinámicas e interactivas.
+            </p>
+        </section>
+    </article>
+    <form action="/api/registro" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nomber</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha">
+            <label for="cedula" >Cedula</label>
+            <input type="text" name="cedula" id="cedula" >
+        </fieldset>
+        <button type="submit">
+            Registrarme
+        </button>
+
+        <button type="reset">
+            Limpiar
+        </button>
+    </form>
+    <aside>
+        <h2>Resumen</h2>
+    </aside>
+</main>
+<footer>
+    <small>&copy; 2026 UTEQ. Todos los derechos reservados.</small>
+</footer>
+</body>
+</html>
