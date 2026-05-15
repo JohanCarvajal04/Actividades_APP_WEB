@@ -72,6 +72,29 @@
             Limpiar
         </button>
     </form>
+    <figure>
+        <video controls width="640"
+               preload="metadata"
+               poster="poster-uteq.jpg"
+               crossorigin="anonymous">
+            <!-- WebM primero (Chrome/Firefox) -->
+            <source src="bienvenida.webm"
+                    type="video/webm">
+            <!-- MP4 fallback (Safari/Edge) -->
+            <source src="bienvenida.mp4"
+                    type="video/mp4">
+            <!-- Subtítulos para usuarios sordos -->
+            <track kind="captions"
+                   src="bienvenida.es.vtt"
+                   srclang="es" default>
+            <!-- Audiodescripciones para usuarios ciegos -->
+            <track kind="descriptions"
+                   src="bienvenida.desc.vtt"
+                   srclang="es">
+        </video>
+        <figcaption>Video de bienvenida UTEQ.</figcaption>
+    </figure>
+
     <aside>
         <h2>Resumen</h2>
     </aside>
@@ -80,4 +103,4 @@
     <small>&copy; 2026 UTEQ. Todos los derechos reservados.</small>
 </footer>
 </body>
-</html>
+</html> 
